@@ -1,0 +1,87 @@
+# PDF Extraction API
+
+This Django REST Framework project provides an API for uploading PDF files and extracting insights from them. The project utilizes drf-spectacular for API documentation.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Using the API](#using-the-api)
+- [API Documentation](#api-documentation)
+- [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Python 3.8 or higher
+- Django 3.2 or higher
+- Django REST Framework
+- Django REST Framework Spectacular
+- Pip (Python package installer)
+
+You can check your Python version by running:
+```bash
+python --version
+```
+
+## Installation
+
+To set up the project, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/pdf-extraction-api.git
+   cd pdf-extraction-api
+   ```
+
+2. **Create a virtual environment** (recommended):
+   ```bash
+   python -m venv venv
+   ```
+
+   Activate the virtual environment:
+   * On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+   * On Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+
+3. **Install the required packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Project
+
+1. Start the development server:
+   ```bash
+   python manage.py runserver
+   ```
+
+2. The API will be available at `http://127.0.0.1:8000/api/extract/`
+
+## Using the API
+
+### Sample cURL Request
+```bash
+curl -X POST -F "pdf_file=@/path/to/your/file.pdf" http://127.0.0.1:8000/api/extract/
+```
+
+### Sample Postman Request
+1. Open Postman and set the method to `POST`
+2. Enter the URL `http://127.0.0.1:8000/api/extract/`
+3. In the **Body** tab, select **form-data**
+4. Under **Key**, enter `pdf_file`
+5. In the **Value** column, upload your PDF file
+6. Send the request
+
+## API Documentation
+
+The API documentation is available at the following endpoints:
+
+- OpenAPI Schema: `http://127.0.0.1:8000/api/schema/`
+- Swagger UI: `http://127.0.0.1:8000/api/docs/`
+
