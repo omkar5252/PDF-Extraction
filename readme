@@ -83,5 +83,5 @@ curl -X POST -F "pdf_file=@/path/to/your/file.pdf" http://127.0.0.1:8000/api/ext
 The API documentation is available at the following endpoints:
 
 - OpenAPI Schema: `http://127.0.0.1:8000/api/schema/`
-- Swagger UI: `http://127.0.0.1:8000/api/docs/`
+- Swagger UI: `http://127.0.0.1:8000`
 
