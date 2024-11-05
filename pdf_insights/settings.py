@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=lu)dy4vr4t2st9i-wvegtx8^%)pq4tlqcqz+*f7^qv@2x#z-7
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.ngrok.io', 'colab.research.google.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'aa2e-139-5-51-125.ngrok-free.app', 'colab.research.google.com']
 
 # Application definition
 
